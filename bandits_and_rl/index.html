@@ -23,6 +23,14 @@
   text-align: left;
 }
 
+	.auto-style3 {
+	color: #FF0000;
+}
+
+	.auto-style4 {
+	background-color: #FFFF00;
+}
+
 	</style>
 </head>
 <body style="background:#F6F9FC; font-family:Arial;">
@@ -37,7 +45,11 @@
 
             <div id="view1">
             <div class="content">
-                <p><strong>Course number</strong>: COMS E6998.001, Columbia 
+                <p><strong>Roster/waitlist situation (Sept 18, 11am): </strong>
+				enough spots on the roster for everyone who is still on the 
+				waitlist. We do not have access to the waitlist any more, so 
+				please check to make sure that you officially get on the roster. </p>
+				<p><strong>Course number</strong>: COMS E6998.001, Columbia 
 				University<br><strong>Instructors</strong>:
 				<a href="http://alekhagarwal.net/">Alekh Agarwal</a> and
 				<a href="https://www.microsoft.com/en-us/research/people/slivkins/">
@@ -45,11 +57,25 @@
 				<span class="section-days"><strong>Schedule</strong>: Wednesdays</span>
 				4:10-6:40pm<br><span class="class-end-time">
 				<span class="class-building"><strong>Location:</strong>
-				TBD<strong>.<br>Office Hours</strong>: TBD.<br><strong>Q&amp;A:</strong> 
-				TBD. <strong>
-				<br>Contact:</strong> 
+				404 International Affairs Building<strong>.<br>Office Hours</strong>: 
+				after each class, and online (see below). <br><strong>Q&amp;A and 
+				announcements:</strong> 
+				we use a
+				<a href="http://piazza.com/columbia/fall2017/comse6998001/home">
+				Piazza site</a> (<a href="http://piazza.com/columbia/fall2017/comse6998001"><span class="auto-style4">sign 
+				up</span></a>). We are <strong>not</strong> using Courseworks.<br> <strong>
+				Contact:</strong> 
 				<a href="mailto:bandits-fa17-instr@microsoft.com">
 				bandits-fa17-instr@microsoft.com</a>.</span></span></p>
+				<p><strong>Online office hours</strong></p>
+				<p><span class="class-end-time">
+				<span class="class-building">[Alekh] Fridays&nbsp;&nbsp;&nbsp; 
+				10:30-11:30am by appointment.<br>[Alex]&nbsp;&nbsp; Mondays 
+				11am-noon by appointment (over Skype).</span></span></p>
+				<p>Please send us an email [at least] the 
+				night before.</p>
+				<p>Please consider asking via Piazza first, for everyone to see 
+				a reply. </p>
 				<p><span class="class-end-time"><strong>Course 
 				description</strong> </span></p>
 				<p><span class="class-end-time">This course covers several 
@@ -74,7 +100,7 @@
 				<p>A final project, 
 				letter grade. The project will involve a mix of reading, coding, 
 				and/or original research on a course-related topic of your 
-				choice (more details later).</p>
+				choice.</p>
 				<p><strong>Tentative topics</strong></p>
 				<ul>
 					<li>Fundamental algorithms for multi-armed bandits:<ul>
@@ -115,8 +141,8 @@
 					</li>
 				</ul>
 				<p><strong>Resources</strong></p>
-				<p>The first half of the course will be based on chapters from
-				<a href="http://slivkins.com/work/MAB-book-Jan17.pdf">this book 
+				<p>Some of the lectures will be based on chapters from
+				<a href="http://slivkins.com/work/MAB-book.pdf">this book 
 				draft</a>. For the rest, reading and/or lecture notes will be 
 				provided. </p>
 				<p>Some resources on course-related topics are listed below:</p>
@@ -140,7 +166,8 @@
 				</ul>
 				<p><b>Concurrent and upcoming courses at Columbia</b></p>
 				<ul>
-					<li>Daniel Russo is teaching a course on dynamic optimization and reinforcement learning 
+					<li>Daniel Russo is teaching a 
+					<a href="https://djrusso.github.io/RLCourse/index">course on dynamic optimization and reinforcement learning</a> 
 						in Fall'17 (in the Business School). </li>
 					<li>Shipra Agrawal will be teaching a 
 						course on reinforcement learning in Spring'18 (in the 
@@ -167,8 +194,50 @@
 			</div>
             <div id="view2">
             	<div class="content">
-				coming				
-					...</div>
+					<strong>Lecture #1 (Sep 6 | Alex)</strong>: <span>&nbsp;Class 
+					organization and intro to the problem space (</span><a href="intro.pdf">slides</a><span>).<br>
+					<br>[Brief and very basic] recap of probability and concentration inequalities (<a href="intro-probab.pdf">slides)</a>.<br>
+					<span class="auto-style3">Understanding these slides is 
+					necessary for the rest of the course!</span><br>
+					<br><strong>Lecture #2 (Sep 13 | Alex)</strong>: Multi-armed 
+					bandits with IID rewards.&nbsp;<br>Main reference: chapter 2 of
+					<a href="http://slivkins.com/work/MAB-book.pdf">Alex's book 
+					draft</a> (rev. Sep 15).<br><br>Additional references:<br>
+					<ul>
+						<li>[Algorithm UCB1] Peter Auer, Nicolo Cesa-Bianchi, 
+						and Paul Fischer.&nbsp;<a href="http://homes.di.unimi.it/~cesabian/Pubblicazioni/ml-02.pdf" rel="nofollow">Finite-time 
+						analysis of the multiarmed bandit problem</a>. Machine 
+						Learning (2002).</li>
+						<ul>
+							<li>Chapter 2.2 of<span>&nbsp;</span><a href="http://research.microsoft.com/en-us/um/people/sebubeck/SurveyBCB12.pdf">this 
+							survey</a><span>&nbsp;</span>analyzes a slightly more 
+							general algorithm.</li>
+						</ul>
+						<li>[Successive Elimination] Eyal Even-Dar, Shie Mannor 
+						and Yishay Mansour.<span>&nbsp;</span><a href="http://www.cs.tau.ac.il/~mansour/papers/06jmlr.pdf">Action 
+						Elimination and Stopping Conditions for the Multi-Armed 
+						Bandit and Reinforcement Learning Problems</a>. Journal 
+						of Machine Learning Research (2006).</li>
+					</ul>
+					<br><strong>Lecture #3 (Sep 20 | Alex):</strong>&nbsp;Lower 
+					bounds on regret<br>Main reference: chapter 3 of
+					<a href="http://slivkins.com/work/MAB-book.pdf">Alex's book 
+					draft</a>.<br><br><strong>Lecture #4 (Sep 27 | Alex)</strong> 
+					The best-expert problem (full feedback &amp; adversarial 
+					rewards)<br>Main reference: chapter 6 of
+					<a href="http://slivkins.com/work/MAB-book.pdf">Alex's book 
+					draft</a>.<br><br><strong>Lecture #5 (Oct 4 | Alex)</strong> 
+					Adversarial bandits<br>Main reference: chapter 7 of
+					<a href="http://slivkins.com/work/MAB-book.pdf">Alex's book 
+					draft</a>.<br><br><strong>Lecture #6 (Oct 11 | Alekh)</strong> 
+					TBD<br><br><strong>Lecture #7 ( Oct 18 | Alekh)</strong> TBD<br>
+					<br><strong>Lecture #8 ( Oct 25 | Alekh)</strong> TBD <br>
+					<br><strong>Lecture #9 ( Nov 1 | Alekh)</strong> TBD<br><br>
+					<strong>Lecture #10 (Nov 8 | Alekh)</strong> TBD<br><br>
+					<strong>Lecture #11 (Nov 15 | Alekh)</strong> TBD<br><br>
+					<strong>Lecture #12 (Nov 29 | Alex)</strong> Bandits &amp; 
+					incentives (tent.)<br><br><strong>Lecture #13 (Dec 6 | Alex)</strong> 
+					project presentations<br></span></div>
 			</div>
 			
 			<div id="view3">
