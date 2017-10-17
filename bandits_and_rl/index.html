@@ -334,8 +334,77 @@
 				Send the PDF to
 				<a href="mailto:bandits-fa17-instr@microsoft.com">
 				bandits-fa17-instr@microsoft.com</a>, with a subject like "project proposal 
-				(name1, name2, name3)". <br><br><strong><a name="TopicSuggestions">Topic suggestions</a>.</strong>
-				<em>[We may modify these over time... ] <br>coming soon ...</em><p><em><strong><a name="FinalReport.">Final report.</a></strong>&nbsp; </em>The final report should 
+				(name1, name2, name3)". <br><br><strong>
+				<a name="TopicSuggestions">Topic suggestions</a>.</strong> <em>[We 
+				may modify these over time... ]</em>
+				<ul>
+					<li><em>[reading: bandits with auxiliary info]</em> some 
+					auxiliary info on rewards is often available to the 
+					algorithm, compared to the "standard" bandit model. For 
+					example:<ul>
+						<li>a Bayesian prior, either generic or specific (e.g., 
+						Gaussian Process prior).</li>
+						<li>the function from arms to expected rewards has some 
+						nice shape: e.g., linear, convex, or Lipschitz. </li>
+						<li>additional feedback may be revealed after each round 
+						(not just reward for the chosen arm).</li>
+					</ul>
+					See Interlude A in Alex's book for more background. Take one 
+					type of aux info (e.g., linear bandits), and read up on it. 					</li>
+					<li><em>[reading: major techniques]</em>  several techniques 
+					appear in many settings.&nbsp; Examples:&nbsp; 
+					multiplicative weights, follow the perturbed/reguralized 
+					leader, UCB/ optimism under uncertainty, epsilon-greedy, 
+					Thompson Sampling. Take one such technique and read up on 
+					it.</li>
+					<li><em>[bandits &amp; social learning]</em> As people make 
+					decisions over time (e.g., where to eat today?) they utilize 
+					information revealed by others in the past (think Yelp) and 
+					produce information that may help others in the future 
+					(e.g., leave a review). Do they explore enough for the 
+					common good? How to incentivize them to explore more? What 
+					if a bandit algorithm issues recommendations, but people do 
+					not have to follow them?  
+					<ul>
+						<li><em>[reading]</em> survey work in this area, or subset 
+						thereof.</li>
+						<li><em>[simulations]</em> see what happens under 
+						different models of human behavior, and different ways 
+						to present or censor past observations. Such simulations 
+						would plug nicely into one of our active research 
+						projects. </li>
+					</ul>
+					</li>
+					<li><em>[reading: bandits &amp; fairness] </em>bandit algorithms 
+					often make choises em>for</em> people (e.g., web search 
+					results) or <em>among</em> people (whom to give a loan?). 
+					Are some individuals or groups treated unfairly? What 
+					"fairness" means, and how to ensure it?</li>
+					<li><em>[reading: bandits &amp; economics]</em> bandit 
+					algorithms are often used in "economic" scenarios: what if a 
+					bandit algorithm ...&nbsp;
+					<ul>
+						<li>... is playing a game against an adversary or 
+						another algorithm?</li>
+						<li>... is used in an auction, either by the auction 
+						maker or by auction participants?</li>
+						<li>... is used to determine prices &amp; offers for sale?</li>
+						<li>... determines who does what and at which price at a 
+						crowdsourcing market?</li>
+					</ul>
+					</li>
+					<li>Further reading on contextual bandits. Possible topics include:<ul>
+						<li>beyond IID: adversarial contexts and/or rewards.</li>
+						<li>algorithms that adapt to data, achieving better 
+						performance for "nice" problem instances.</li>
+						<li>structured action sets, e.g., an action is a slate 
+						of articles.</li>
+						<li>contextual bandits in the wild: real-life 
+						applications and deployments.</li>
+					</ul>
+					</li>
+				</ul>
+				<p><em><strong><a name="FinalReport.">Final report.</strong>&nbsp; </em>The final report should 
 				clearly and concisely describe the project: what was the chosen 
 				topic, why it is interesting, what you've set out to accomplish, 
 				what you've learned/understood/accomplished, and what it means 
