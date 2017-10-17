@@ -34,6 +34,9 @@
 	.auto-style5 {
 	color: #008000;
 }
+.auto-style6 {
+	color: #800000;
+}
 
 	</style>
 </head>
@@ -345,22 +348,23 @@
 					<li><span class="auto-style5"><em>[reading: bandits with auxiliary 
 					structure]</em></span> much literature on bandits assumes 
 					auxiliary structure, compared to the "standard" bandit 
-					model. Examples include:<ul>
+					model. Algorithms can take advantage of such structure, 
+					e.g., to cope with a huge #actions (cf.&nbsp; Interlude A in 
+					Alex's book). Examples include:<ul>
 						<li>a Bayesian prior, either generic or specific (e.g., 
 						Gaussian Process prior).</li>
 						<li>the function from arms to expected rewards has some 
 						nice shape: e.g., linear, convex, or Lipschitz. </li>
 					</ul>
-					Algorithms can take advantage of such structure, e.g., to 
-					cope witha huge #actions; see Interlude A in Alex's book for more background. Take one 
+&nbsp;Take one 
 					type of structure (e.g., linear bandits), and read up on it. 					</li>
 					<li><span class="auto-style5"><em>[reading &amp; simulations: 
 					bandits with auxiliary data]</em></span> In many scenarios, 
 					algorithm has access to extra data, compared to the 
 					"standard" bandit model. How to leverage this data? For 
 					example:<ul>
-						<li>after each round, rewards for other arms may be 
-						available, not just for the chosen arm. </li>
+						<li>after each round, rewards for several arms may be 
+						revealed, not just for the chosen arm. </li>
 						<li>some exploration data may be available before the 
 						algorithm starts,&nbsp; </li>
 						<li>some exploration may be happening anyway, in 
@@ -368,6 +372,19 @@
 						people just try out different things).</li>
 					</ul>
 					</li>
+					<li><span class="auto-style5"><em>[reading: bandits with 
+					structured actions]</em></span> in many applications, 
+					actions have a specific structure, e.g., action is a slate 
+					of search results. There are several ways to model this, 
+					depending on:<ul>
+						<li>how users react to the slate E.g., click once and 
+						leave, or consider each item no matter what?</li>
+						<li>what is the reward metric? E.g., does it help to 
+						have <em>two</em> clicks on the slate?</li>
+						<li>what feedback is observed? E.g., all clicks, or only 
+						the total reward?</li>
+					</ul>
+					This has been studied both with and without contexts.</li>
 					<li><span class="auto-style5"><em>[reading: major techniques]</em></span>  several techniques 
 					appear in many settings.&nbsp; Examples:&nbsp; 
 					multiplicative weights, follow the perturbed/reguralized 
@@ -391,13 +408,16 @@
 						would plug nicely into one of our active research 
 						projects. </li>
 					</ul>
-					</li>
+					<span class="auto-style6"><em>(Current interests: Alex, 
+					Steven.)</em></span></li>
 					<li><em><span class="auto-style5">[reading: bandits &amp; fairness]</span>
 					</em>bandit algorithms 
 					often make choises em>for</em> people (e.g., web search 
 					results) or <em>among</em> people (whom to give a loan?). 
 					Are some individuals or groups treated unfairly? What 
-					"fairness" means, and how to ensure it?</li>
+					"fairness" means, and how to ensure it?<br>
+					<span class="auto-style6"><em>(Current interests: Alekh, 
+					Alex, Steven.)</em></span></li>
 					<li><span class="auto-style5"><em>[reading: bandits &amp; economics]</em></span> bandit 
 					algorithms are often used in "economic" scenarios: what if a 
 					bandit algorithm ...&nbsp;
@@ -410,19 +430,19 @@
 						<li>... determines who does what and at which price at a 
 						crowdsourcing market?</li>
 					</ul>
-					</li>
+					<span class="auto-style6"><em>(Current interests: Alex)</em></span></li>
 					<li><span class="auto-style5"><em>[reading &amp; simulations: 
 					greedy algorithm]</em></span> Surprisingly, greedy algorithm 
 					-- with no exploration whatsoever -- is not that bad for 
 					some bandit scenarios. One can survey existing results, 
-					and/or run some simulations.&nbsp;&nbsp; </li>
+					and/or run some simulations.<br><span class="auto-style6">
+					<em>(Current interests: Steven.)</em></span>&nbsp;&nbsp;
+					</li>
 					<li><span class="auto-style5"><em>[reading: contextual 
 					bandits]</em></span> Possible topics include:<ul>
 						<li>beyond IID: adversarial contexts and/or rewards.</li>
 						<li>algorithms that adapt to data, achieving better 
 						performance for "nice" problem instances.</li>
-						<li>structured action sets, e.g., an action is a slate 
-						of articles.</li>
 						<li>contextual bandits in the wild: real-life 
 						applications and deployments.</li>
 					</ul>
