@@ -385,13 +385,22 @@
 						the total reward?</li>
 					</ul>
 					This has been studied both with and without contexts.</li>
-					<li><span class="auto-style5"><em>[reading: major techniques]</em></span>  several techniques 
-					appear in many settings.&nbsp; Examples:&nbsp; 
-					multiplicative weights, follow the perturbed/reguralized 
-					leader, UCB/ optimism under uncertainty, epsilon-greedy, 
-					Thompson Sampling. Take one such technique and read up on 
+					<li><span class="auto-style5"><em>[reading: general techniques]</em></span> 
+					same technique may 
+					appear in many settings, from bandits to contextual bandits 
+					to RL.&nbsp; Prominent examples:&nbsp;
+					<ul>
+						<li>multiplicative weights</li>
+						<li>follow the perturbed/reguralized 
+					leader</li>
+						<li>UCB / optimism under uncertainty</li>
+						<li>non-adaprive exploration (explore-first, 
+						epsilon-greedy, etc.)</li>
+						<li>Thompson Sampling </li>
+					</ul>
+					Take one such technique and read up on 
 					it.</li>
-					<li><span class="auto-style5"><em>[reading &amp; simulations: bandits &amp; social learning]</em></span> As people make 
+					<li><span class="auto-style5"><em>[bandits &amp; social learning]</em></span> As people make 
 					decisions over time (e.g., where to eat today?) they utilize 
 					information revealed by others in the past (think Yelp) and 
 					produce information that may help others in the future 
@@ -400,9 +409,9 @@
 					if a bandit algorithm issues recommendations, but people do 
 					not have to follow them?  
 					<ul>
-						<li><em>[reading]</em> survey work in this area, or subset 
+						<li><span class="auto-style5"><em>[reading]</em></span> survey work in this area, or subset 
 						thereof.</li>
-						<li><em>[simulations]</em> see what happens under 
+						<li><span class="auto-style5"><em>[simulations]</em></span> see what happens under 
 						different models of human behavior, and different ways 
 						to present or censor past observations. Such simulations 
 						would plug nicely into one of our active research 
@@ -418,26 +427,31 @@
 					"fairness" means, and how to ensure it?<br>
 					<span class="auto-style6"><em>(Current interests: Alekh, 
 					Alex, Steven.)</em></span></li>
-					<li><span class="auto-style5"><em>[reading: bandits &amp; economics]</em></span> bandit 
-					algorithms are often used in "economic" scenarios: what if a 
-					bandit algorithm ...&nbsp;
+					<li><span class="auto-style5"><em>[online learning &amp; 
+					games]</em></span> what if an online learning algorithm is playing a game against an adversary or 
+						another algorithm? What does this process converge to, 
+					and how fast?
 					<ul>
-						<li>... is playing a game against an adversary or 
-						another algorithm?</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> 
+						survey the literature</li>
+						<li><span class="auto-style5"><em>[simulations]</em></span> 
+						what if the algorithm is best-responding to the 
+						"empirical play" (time-averages) of the adversary?
+						<span class="auto-style6"><em>(Current interests: 
+						Steven)</em></span></li>
+					</ul>
+					</li>
+					<li><span class="auto-style5"><em>[reading: bandits &amp; 
+					economic mechanisms]</em></span> what if a bandit algorithm 
+					...</li>
+					<ul>
 						<li>... is used in an auction, either by the auction 
 						maker or by auction participants?</li>
 						<li>... is used to determine prices &amp; offers for sale?</li>
 						<li>... determines who does what and at which price at a 
 						crowdsourcing market?</li>
 					</ul>
-					<span class="auto-style6"><em>(Current interests: Alex)</em></span></li>
-					<li><span class="auto-style5"><em>[reading &amp; simulations: 
-					greedy algorithm]</em></span> Surprisingly, greedy algorithm 
-					-- with no exploration whatsoever -- is not that bad for 
-					some bandit scenarios. One can survey existing results, 
-					and/or run some simulations.<br><span class="auto-style6">
-					<em>(Current interests: Steven.)</em></span>&nbsp;&nbsp;
-					</li>
+					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading: contextual 
 					bandits]</em></span> Possible topics include:<ul>
 						<li>beyond IID: adversarial contexts and/or rewards.</li>
