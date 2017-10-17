@@ -342,19 +342,32 @@
 				<a name="TopicSuggestions">Topic suggestions</a>.</strong> <em>[We 
 				may modify these over time... ]</em>
 				<ul>
-					<li><span class="auto-style5"><em>[reading: bandits with auxiliary info]</em></span> some 
-					auxiliary info on rewards is often available to the 
-					algorithm, compared to the "standard" bandit model. For 
-					example:<ul>
+					<li><span class="auto-style5"><em>[reading: bandits with auxiliary 
+					structure]</em></span> much literature on bandits assumes 
+					auxiliary structure, compared to the "standard" bandit 
+					model. Examples include:<ul>
 						<li>a Bayesian prior, either generic or specific (e.g., 
 						Gaussian Process prior).</li>
 						<li>the function from arms to expected rewards has some 
 						nice shape: e.g., linear, convex, or Lipschitz. </li>
-						<li>additional feedback may be revealed after each round 
-						(not just reward for the chosen arm).</li>
 					</ul>
-					See Interlude A in Alex's book for more background. Take one 
-					type of aux info (e.g., linear bandits), and read up on it. 					</li>
+					Algorithms can take advantage of such structure, e.g., to 
+					cope witha huge #actions; see Interlude A in Alex's book for more background. Take one 
+					type of structure (e.g., linear bandits), and read up on it. 					</li>
+					<li><span class="auto-style5"><em>[reading &amp; simulations: 
+					bandits with auxiliary data]</em></span> In many scenarios, 
+					algorithm has access to extra data, compared to the 
+					"standard" bandit model. How to leverage this data? For 
+					example:<ul>
+						<li>after each round, rewards for other arms may be 
+						available, not just for the chosen arm. </li>
+						<li>some exploration data may be available before the 
+						algorithm starts,&nbsp; </li>
+						<li>some exploration may be happening anyway, in 
+						parrallel with the algorithm (e.g., because different 
+						people just try out different things).</li>
+					</ul>
+					</li>
 					<li><span class="auto-style5"><em>[reading: major techniques]</em></span>  several techniques 
 					appear in many settings.&nbsp; Examples:&nbsp; 
 					multiplicative weights, follow the perturbed/reguralized 
@@ -379,7 +392,8 @@
 						projects. </li>
 					</ul>
 					</li>
-					<li><em><span class="auto-style5">[reading: bandits &amp; fairness]</span> </em>bandit algorithms 
+					<li><em><span class="auto-style5">[reading: bandits &amp; fairness]</span>
+					</em>bandit algorithms 
 					often make choises em>for</em> people (e.g., web search 
 					results) or <em>among</em> people (whom to give a loan?). 
 					Are some individuals or groups treated unfairly? What 
@@ -401,8 +415,7 @@
 					greedy algorithm]</em></span> Surprisingly, greedy algorithm 
 					-- with no exploration whatsoever -- is not that bad for 
 					some bandit scenarios. One can survey existing results, 
-					and/or run some simulations.&nbsp;&nbsp;
-					</li>
+					and/or run some simulations.&nbsp;&nbsp; </li>
 					<li><span class="auto-style5"><em>[reading: contextual 
 					bandits]</em></span> Possible topics include:<ul>
 						<li>beyond IID: adversarial contexts and/or rewards.</li>
