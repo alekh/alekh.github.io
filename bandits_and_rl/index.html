@@ -314,7 +314,7 @@
 				<p>To keep #projects managable, we kindly ask you to work
 				<span class="auto-style3">in the groups of three of more for 
 				reading projects, and (at least) in pairs for experiments and 
-				research projects.</span> Working in small groups tends to be 
+				research projects.</span> Working in groups tends to be 
 				more productive, more fun and also a useful collaborative 
 				experience. </p>
 				<p>If you are working on a course-related research project with 
@@ -354,7 +354,7 @@
 						<li>a Bayesian prior, either generic or specific (e.g., 
 						Gaussian Process prior).</li>
 						<li>the function from arms to expected rewards has some 
-						nice shape: e.g., linear, convex, or Lipschitz. </li>
+						nice shape: e.g., linear, convex, or Lipschitz. (e.g.: http://www.jmlr.org/proceedings/papers/v15/chu11a/chu11a.pdf, https://arxiv.org/abs/cs/0408007, https://arxiv.org/abs/1312.1277)</li>
 					</ul>
 &nbsp;Take one 
 					type of structure (e.g., linear bandits), and read up on it. 					</li>
@@ -364,27 +364,28 @@
 					"standard" bandit model. How to leverage this data? For 
 					example:<ul>
 						<li>after each round, rewards for several arms may be 
-						revealed, not just for the chosen arm. </li>
+						revealed, not just for the chosen arm. (e.g.: https://arxiv.org/abs/1409.8428)</li>
 						<li>some exploration data may be available before the 
-						algorithm starts,&nbsp; </li>
+						algorithm starts,&nbsp; (e.g. http://papers.nips.cc/paper/3977-learning-from-logged-implicit-exploration-data.pdf)  </li>
 						<li>some exploration may be happening anyway, in 
 						parrallel with the algorithm (e.g., because different 
 						people just try out different things).</li>
 					</ul>
 					</li>
-					<li><span class="auto-style5"><em>[reading: bandits with 
+					<li><span class="auto-style5"><em>[reading and simulations: bandits with 
 					structured actions]</em></span> in many applications, 
 					actions have a specific structure, e.g., action is a slate 
 					of search results. There are several ways to model this, 
 					depending on:<ul>
 						<li>how users react to the slate E.g., click once and 
-						leave, or consider each item no matter what?</li>
+						leave, or consider each item no matter what? (e.g.: http://www.jmlr.org/proceedings/papers/v48/lif16-supp.pdf)</li>
 						<li>what is the reward metric? E.g., does it help to 
 						have <em>two</em> clicks on the slate?</li>
 						<li>what feedback is observed? E.g., all clicks, or only 
-						the total reward?</li>
+						the total reward? (e.g.: http://arxiv.org/abs/1605.04812, http://arxiv.org/abs/1502.05890)</li>
+						<li><span class="auto-style5"><em>[simulations]</em></span> Take a real-world ranking dataset, such as from https://www.microsoft.com/en-us/research/project/mslr/. Simulate different user models on this data, and evaluate the effect of an algorithm tailored to that model, an algorithm just operating on global rewards of the slate, and a greedy algorithm.
 					</ul>
-					This has been studied both with and without contexts.</li>
+					This has been studied both with and without contexts. <span class="auto-style6"><em>(Current interests: Alekh.)</em></span></li></li>
 					<li><span class="auto-style5"><em>[reading: general techniques]</em></span> 
 					same technique may 
 					appear in many settings, from bandits to contextual bandits 
@@ -421,7 +422,7 @@
 					Steven.)</em></span></li>
 					<li><em><span class="auto-style5">[reading: bandits &amp; fairness]</span>
 					</em>bandit algorithms 
-					often make choises em>for</em> people (e.g., web search 
+					often make choices <em>for</em> people (e.g., web search 
 					results) or <em>among</em> people (whom to give a loan?). 
 					Are some individuals or groups treated unfairly? What 
 					"fairness" means, and how to ensure it?<br>
@@ -454,7 +455,7 @@
 					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading: contextual 
 					bandits]</em></span> Possible topics include:<ul>
-						<li>beyond IID: adversarial contexts and/or rewards.</li>
+						<li>beyond IID: adversarial contexts and/or rewards (e.g.: https://arxiv.org/abs/1606.00313).</li>
 						<li>algorithms that adapt to data, achieving better 
 						performance for "nice" problem instances.</li>
 						<li>contextual bandits in the wild: real-life 
