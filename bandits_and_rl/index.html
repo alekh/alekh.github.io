@@ -455,9 +455,9 @@
 					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading, simulations and research: contextual 
 					bandits theory]</em></span> Possible topics include:<ul>
-						<li><span class="auto-style5"><em>[reading]</em></span>beyond IID: adversarial contexts and/or rewards (e.g.: <a href="https://arxiv.org/abs/1606.00313"> BISTRO+</a> and predecessors).</li>
-						<li><span class="auto-style5"><em>[reading]</em></span>algorithms that adapt to data, achieving better 
-						performance for "nice" problem instances (e.g.: <a href="http://www.szit.bme.hu/~oti/publications/hannan.pdf"> first-order regret bounds</a>, <a href="http://proceedings.mlr.press/v65/agarwal17a.html"> open problem</a>.</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> beyond IID: adversarial contexts and/or rewards (e.g.: <a href="https://arxiv.org/abs/1606.00313"> BISTRO+</a> and predecessors).</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> algorithms that adapt to data, achieving better 
+						performance for "nice" problem instances (e.g.: <a href="http://www.szit.bme.hu/~oti/publications/hannan.pdf"> first-order regret bounds</a>, <a href="http://proceedings.mlr.press/v65/agarwal17a.html"> open problem</a>, <a href="https://arxiv.org/abs/1612.06246">CORRAL</a>).</li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> How do the adversarial algorithms behave on i.i.d. contexts and rewards, compared with algorithms for those settings? How do the i.i.d. algorithms work on non-i.i.d. and adversarial instances? Which seems more practically useful?</li>
 						<li><span class="auto-style5"><em>[research]</em></span> Study the <a href="http://cs.bme.hu/%7Egergo/files/NB15.pdf">implicit exploration technique</a> and try combining it with efficient contextual bandit methods as a replacement for uniform exploration? Does this lead to improvements in a structured action setting? You can also empirically evaluate the resulting approach in lieu of theory, or both.</li>
 						
@@ -465,9 +465,23 @@
 					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading and simulations: contextual 
 					bandits applications and deployments]</em></span> Possible topics include:<ul>
-					    <li><span class="auto-style5"><em>[reading]</em></span>contextual bandits in the wild: deployed systems and learnings (e.g.: <a href="http://arxiv.org/abs/1606.03966">Decision Service paper</a>, <a href="https://research.google.com/pubs/pub43146.html"> Technical debt paper</a>, <a href="http://hunch.net/~rwil/">ICML Tutorial</a>)</li>
-					    <li><span class="auto-style5"><em>[reading/simulations]</em></span>contextual bandit applications ( See for a partial ref of application papers: <a href="http://hunch.net/~rwil/Bibliography.pptx">ICML Tutorial</a>. Pick one or more papers around an application, and run simulations with some algorithms you have learned in this course on that application.</li>
+					    <li><span class="auto-style5"><em>[reading]</em></span> Contextual bandits in the wild: deployed systems and learnings (e.g.: <a href="http://arxiv.org/abs/1606.03966">Decision Service paper</a>, <a href="https://research.google.com/pubs/pub43146.html"> Technical debt paper</a>, <a href="http://hunch.net/~rwil/">ICML Tutorial</a>)</li>
+					    <li><span class="auto-style5"><em>[reading/simulations]</em></span> Contextual bandit applications ( See for a partial ref of application papers: <a href="http://hunch.net/~rwil/Bibliography.pptx">ICML Tutorial</a>. Pick one or more papers around an application, and run simulations with some algorithms you have learned in this course on that application.</li>
 					  </ul>
+					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+					<li><span class="auto-style5"><em>[reading and research: Off-policy evaluation]</em></span> How to best evaluate policies given logged data?<ul> 
+					    <li><span class="auto-style5"><em>[reading]</em></span> Biased estimators (e.g.: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/paper-14.pdf"> doubly robust with bias</a>, <a href="https://arxiv.org/abs/1612.01205">SWITCH</a>)</li>
+					    <li><span class="auto-style5"><em>[reading]</em></span> Applications in Information Retrieval (see e.g.: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ftir-online-evaluation-final-journal.pdf">Hofmann et al. monograph</a>)</li>
+					    <li><span class="auto-style5"><em>[research]</em></span> How to improve our evaluation approach for exploration algorithms using biased algorithms like SWITCH? Can you analyze in theory if the exploration algorithm has some nice properties? (a starting point for such a property might be the structural assumption in the <a href="https://arxiv.org/abs/1612.06246"> CORRAL </a> paper).</li>
+					    <li><span class="auto-style5"><em>[research]</em></span> How to extend the minimax lower bounds from the SWITCH paper for structural conditions on rewards such as linear?</li>
+					  </ul>
+					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+					<li><span class="auto-style5"><em>[reading, simulations and research: Off-policy evaluation]</em></span> How to best learn good policies given logged data?<ul> 
+					    <li> <span class="auto-style5"><em>[reading]</em></span> Reducing the variance in off-policy learning (see e.g.<a href="https://www.microsoft.com/en-us/research/publication/self-normalized-estimator-counterfactual-learning/"> Self-normalized poem</a>)</li>
+					    <li> <span class="auto-style5"><em>[reading]</em></span> Can you extend the IPS-based off-policy learning ideas to further incorporate a variance term like the work above? You might get some inspiration from the <a href="http://proceedings.mlr.press/v15/beygelzimer11a.html">EXP4.P</a> paper. </li>
+					    <li> <span class="auto-style5"><em>[reading]</em></span> Study the effect of using different off-policy learning methods inside your favorite contextual bandit algorithm (such as to train the greedy policy in epsilon-greedy).</li>
+					  </ul>
+					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
 					</li>
 				</ul>
                                                
