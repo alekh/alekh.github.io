@@ -354,7 +354,7 @@
 						<li>a Bayesian prior, either generic or specific (e.g., 
 						Gaussian Process prior).</li>
 						<li>the function from arms to expected rewards has some 
-						nice shape: e.g., linear, convex, or Lipschitz. (e.g.: http://www.jmlr.org/proceedings/papers/v15/chu11a/chu11a.pdf, https://arxiv.org/abs/cs/0408007, https://arxiv.org/abs/1312.1277)</li>
+						nice shape: e.g., linear, convex, or Lipschitz. (e.g.: <a href="http://www.jmlr.org/proceedings/papers/v15/chu11a/chu11a.pdf"/>, <a href="https://arxiv.org/abs/cs/0408007"/a>, <a href="https://arxiv.org/abs/1312.1277"/>)</li>
 					</ul>
 &nbsp;Take one 
 					type of structure (e.g., linear bandits), and read up on it. 					</li>
@@ -364,9 +364,9 @@
 					"standard" bandit model. How to leverage this data? For 
 					example:<ul>
 						<li>after each round, rewards for several arms may be 
-						revealed, not just for the chosen arm. (e.g.: https://arxiv.org/abs/1409.8428)</li>
+						revealed, not just for the chosen arm. (e.g.: <a href="https://arxiv.org/abs/1409.8428"/>)</li>
 						<li>some exploration data may be available before the 
-						algorithm starts,&nbsp; (e.g. http://papers.nips.cc/paper/3977-learning-from-logged-implicit-exploration-data.pdf)  </li>
+						algorithm starts,&nbsp; (e.g. <a href="http://papers.nips.cc/paper/3977-learning-from-logged-implicit-exploration-data.pdf"/>)  </li>
 						<li>some exploration may be happening anyway, in 
 						parrallel with the algorithm (e.g., because different 
 						people just try out different things).</li>
@@ -378,11 +378,11 @@
 					of search results. There are several ways to model this, 
 					depending on:<ul>
 						<li>how users react to the slate E.g., click once and 
-						leave, or consider each item no matter what? (e.g.: http://www.jmlr.org/proceedings/papers/v48/lif16-supp.pdf)</li>
+						leave, or consider each item no matter what? (e.g.: <a href="http://www.jmlr.org/proceedings/papers/v48/lif16-supp.pdf"/>)</li>
 						<li>what is the reward metric? E.g., does it help to 
 						have <em>two</em> clicks on the slate?</li>
 						<li>what feedback is observed? E.g., all clicks, or only 
-						the total reward? (e.g.: http://arxiv.org/abs/1605.04812, http://arxiv.org/abs/1502.05890)</li>
+						the total reward? (e.g.: <a href="http://arxiv.org/abs/1605.04812"/>, <a href="http://arxiv.org/abs/1502.05890"/>)</li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> Take a real-world ranking dataset, such as from https://www.microsoft.com/en-us/research/project/mslr/. Simulate different user models on this data, and evaluate the effect of an algorithm tailored to that model, an algorithm just operating on global rewards of the slate, and a greedy algorithm.
 					</ul>
 					This has been studied both with and without contexts. <span class="auto-style6"><em>(Current interests: Alekh.)</em></span></li></li>
@@ -453,16 +453,24 @@
 						crowdsourcing market?</li>
 					</ul>
 					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
-					<li><span class="auto-style5"><em>[reading: contextual 
-					bandits]</em></span> Possible topics include:<ul>
-						<li>beyond IID: adversarial contexts and/or rewards (e.g.: https://arxiv.org/abs/1606.00313).</li>
-						<li>algorithms that adapt to data, achieving better 
-						performance for "nice" problem instances.</li>
-						<li>contextual bandits in the wild: real-life 
-						applications and deployments.</li>
+					<li><span class="auto-style5"><em>[reading, simulations and research: contextual 
+					bandits theory]</em></span> Possible topics include:<ul>
+						<li><span class="auto-style5"><em>[reading]</em></span>beyond IID: adversarial contexts and/or rewards (e.g.: <a href="https://arxiv.org/abs/1606.00313"/>).</li>
+						<li><span class="auto-style5"><em>[reading]</em></span>algorithms that adapt to data, achieving better 
+						performance for "nice" problem instances (e.g.: <a href="http://www.szit.bme.hu/~oti/publications/hannan.pdf"/>, <a href="http://proceedings.mlr.press/v65/agarwal17a.html"/>.</li>
+						<li><span class="auto-style5"><em>[simulations]</em></span> How do the adversarial algorithms behave on i.i.d. contexts and rewards, compared with algorithms for those settings? How do the i.i.d. algorithms work on non-i.i.d. and adversarial instances? Which seems more practically useful?</li>
+						<li><span class="auto-style5"><em>[research]</em></span> Study the implicit exploration technique in <a href="http://cs.bme.hu/%7Egergo/files/NB15.pdf"/> and try combining it with efficient contextual bandit methods as a replacement for uniform exploration? Does this lead to improvements in a structured action setting? You can also empirically evaluate the resulting approach in lieu of theory, or both.</li>
+						
 					</ul>
+					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+					<li><span class="auto-style5"><em>[reading and simulations: contextual 
+					bandits applications and deployments]</em></span> Possible topics include:<ul>
+					    <li><span class="auto-style5"><em>[reading]</em></span>contextual bandits in the wild: deployed systems and learnings (e.g.: <a href="http://arxiv.org/abs/1606.03966"/>, <a href="https://research.google.com/pubs/pub43146.html"/>, <a href="http://hunch.net/~rwil/"/>)</li>
+					    <li><span class="auto-style5"><em>[reading/simulations]</em></span>contextual bandit applications ( See for a partial ref of application papers: <a href="http://hunch.net/~rwil/Bibliography.pptx"/>. Pick one or more papers around an application, and run simulations with some algorithms you have learned in this course on that application.</li>
+					  </ul>
 					</li>
 				</ul>
+                                               
 				<p><em><strong><a name="FinalReport.">Final report.</strong>&nbsp; </em>The final report should 
 				clearly and concisely describe the project: what was the chosen 
 				topic, why it is interesting, what you've set out to accomplish, 
