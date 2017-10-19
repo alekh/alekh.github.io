@@ -250,7 +250,7 @@
 			<div id="view3">
             <div class="content">
                 
-                <p><strong>Sign-up: </strong>Please use
+                <p><strong>Sign-up sheet </strong>(coming soon)<strong>: </strong>Please use
 				this sign-up sheet to help us 
 				keep track of the projects. Please update it as appropriate, 
 				including your names/emails, brief project description (or the 
@@ -258,23 +258,28 @@
 				use this sheet to to find partners and to be aware of each 
 				other's topics and progress.</p>
 				<strong>Deliverables &amp; due dates</strong><ol>
-					<li><strong>Discussion</strong> with one of us regarding the possible project 
-					topics (in person and/or via email or Skype).<br>See below for advice 
+					<li><strong>Initial discussion</strong> regarding the possible project 
+					topics (via Skype, most likely).&nbsp; 
+					<p><em>When</em>: the <span class="auto-style3">week of Mon, Oct 23</span>. Sign-up sheet coming soon.</p>
+					<p>See below for advice 
 					on <a href="#ChoosingTopic">choosing a topic</a> and
-					<a href="#TopicSuggestions">topic suggestions</a>.</li>
+					<a href="#TopicSuggestions">topic suggestions</a>.</p></li>
 					<li><strong><a href="#ProjectProposal.">Project proposal</a></strong>: a short document explaining the 
-					topic and the proposed approach (due
-					XXX; but the sooner the 
-					better). </li>
+					topic and the proposed approach (<span class="auto-style3">due 
+					by the end of Oct 31</span>).</li>
+					<li><strong>Mid-project discussion</strong>: optional but 
+					encouraged, especially if you are doing simulations or 
+					research. (<span class="auto-style3">Week of Mon, Nov 13</span> 
+					-- sign-up sheet will be up.)</li>
 					<li><strong><a href="#FinalReport.">Final report</a></strong>: a short (3-7 pp long) academic-style 
 					paper describing the background and what you've done for the 
-					project. (<span class="auto-style3">Soft deadline: Dec 5</span>).</li>
+					project. (<span class="auto-style3">Tentative deadline: Dec 5</span>).</li>
 					<li><strong><a href="#ProjectPresentation.">Final presentation</a></strong>: 
 					A presentation during the last class (Dec 6).</li>
 				</ol>
-				<p>You are encouraged to start the discussion early. </p>
+				<p>Please do not hesitate to send us questions at any point. </p>
 				<p><strong>Our crew.</strong> The projects will be supervised by 
-				the two instructors and two more people:
+				the two instructors, and two more people:
 				<a href="http://www.cis.upenn.edu/~wuzhiwei/">Steven Wu</a> and
 				<a href="https://sites.google.com/a/umich.edu/nanjiang/">Nan 
 				Jiang</a>. There will be one supervisor for each project, to 
@@ -312,9 +317,9 @@
 				specific research question, and/or may help towards research 
 				projects in the future. </p>
 				<p>To keep #projects managable, we kindly ask you to work
-				<span class="auto-style3">in the groups of three of more for 
-				reading projects, and (at least) in pairs for experiments and 
-				research projects.</span> Working in groups tends to be 
+				<span class="auto-style3">in&nbsp; groups of three of more. </span>
+				We may allow, at our discretion, a few groups of two for some 
+				simulations or research projects. Working in groups tends to be 
 				more productive, more fun and also a useful collaborative 
 				experience. </p>
 				<p>If you are working on a course-related research project with 
@@ -351,10 +356,12 @@
 					model. Algorithms can take advantage of such structure, 
 					e.g., to cope with a huge #actions (cf.&nbsp; Interlude A in 
 					Alex's book). Examples include:<ul>
-						<li>a Bayesian prior, either generic or specific (e.g., 
-						Gaussian Process prior).</li>
+						<li>a Bayesian prior, either generic (e.g., see Chapter 
+						4 of Alex's book) or specific (e.g., 
+						<a href="https://arxiv.org/abs/0912.3995">bandits with a Gaussian Process prior</a>).</li>
 						<li>the function from arms to expected rewards has some 
-						nice shape: e.g., linear, convex, or Lipschitz. (e.g.: <a href="http://www.jmlr.org/proceedings/papers/v15/chu11a/chu11a.pdf">LinUCB</a>, <a href="https://arxiv.org/abs/cs/0408007"> Bandit Gradient Descent</a>, <a href="https://arxiv.org/abs/1312.1277"> Bandits in metric spaces</a>)</li>
+						nice shape: e.g., linear, convex, or Lipschitz. (e.g.: <a href="http://www.jmlr.org/proceedings/papers/v15/chu11a/chu11a.pdf">LinUCB</a>, <a href="https://arxiv.org/abs/cs/0408007"> Bandit Gradient Descent</a>, 
+						ch. 5 of Alex's book)</li>
 					</ul>
 &nbsp;Take one 
 					type of structure (e.g., linear bandits), and read up on it. 					</li>
@@ -391,13 +398,17 @@
 					appear in many settings, from bandits to contextual bandits 
 					to RL.&nbsp; Prominent examples:&nbsp;
 					<ul>
-						<li>multiplicative weights</li>
+						<li>multiplicative weights (e.g., see
+						<a href="http://theoryofcomputing.org/articles/v008a006/">
+						this survey</a>).</li>
 						<li>follow the perturbed/reguralized 
-					leader</li>
-						<li>UCB / optimism under uncertainty</li>
+					leader (e.g., see ch. 8 from Alex's book).</li>
+						<li>UCB / optimism under uncertainty (e.g., see ch. 5 
+						and ch. 10 in Alex's book for applications beyond the 
+						basic bandit model).</li>
 						<li>non-adaprive exploration (explore-first, 
 						epsilon-greedy, etc.)</li>
-						<li>Thompson Sampling </li>
+						<li>Thompson Sampling (start with ch. 4 of Alex's book).</li>
 					</ul>
 					Take one such technique and read up on 
 					it.</li>
@@ -410,8 +421,11 @@
 					if a bandit algorithm issues recommendations, but people do 
 					not have to follow them?  
 					<ul>
-						<li><span class="auto-style5"><em>[reading]</em></span> survey work in this area, or subset 
-						thereof.</li>
+						<li><span class="auto-style5"><em>[reading]</em></span>&nbsp; 
+						start with <a href="http://dl.acm.org/authorize?N47974">
+						this informal article</a> and this tutorial <span>(</span><a href="http://slivkins.com/work/ec17-tutorial-Alex.pdf">part 
+						I</a><span>&nbsp;and&nbsp;</span><a href="http://slivkins.com/work/ec17-tutorial-Bobby.pdf">part 
+						II</a><span>).</span></li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> see what happens under 
 						different models of human behavior, and different ways 
 						to present or censor past observations. Such simulations 
@@ -425,7 +439,11 @@
 					often make choices <em>for</em> people (e.g., web search 
 					results) or <em>among</em> people (whom to give a loan?). 
 					Are some individuals or groups treated unfairly? What 
-					"fairness" means, and how to ensure it?<br>
+					"fairness" means, and how to ensure it? (e.g., see
+					<a href="http://www.cis.upenn.edu/~aaroth/fairbandits.html">
+					this paper</a> and
+					<a href="http://www.cis.upenn.edu/~aaroth/incentfairness.html">
+					that paper</a>).<br>
 					<span class="auto-style6"><em>(Current interests: Alekh, 
 					Alex, Steven.)</em></span></li>
 					<li><span class="auto-style5"><em>[online learning &amp; 
@@ -434,7 +452,11 @@
 					and how fast?
 					<ul>
 						<li><span class="auto-style5"><em>[reading]</em></span> 
-						survey the literature</li>
+						Start with
+						<a href="http://www.cs.cornell.edu/courses/cs683/2007sp/lecnotes/week2.pdf">
+						this lecture note</a> and
+						<a href="http://rob.schapire.net/papers/FreundScYY.pdf">
+						that paper</a>.</li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> 
 						what if the algorithm is best-responding to the 
 						"empirical play" (time-averages) of the adversary?
@@ -442,15 +464,19 @@
 						Steven)</em></span></li>
 					</ul>
 					</li>
-					<li><span class="auto-style5"><em>[reading: bandits &amp; 
-					economic mechanisms]</em></span> what if a bandit algorithm 
+					<li><span class="auto-style5"><em>[reading: online learning &amp; 
+					economic mechanisms]</em></span> what if a bandit / online 
+					learning algorithm 
 					...</li>
 					<ul>
 						<li>... is used in an auction, either by the auction 
-						maker or by auction participants?</li>
-						<li>... is used to determine prices &amp; offers for sale?</li>
+						maker or by auction participants? (e.g., see 						<a href="http://cesa-bianchi.di.unimi.it/Pubblicazioni/secondPrice.pdf">
+						this paper</a> and
+						<a href="https://arxiv.org/abs/1611.01688">that paper</a>)</li>
+						<li>... is used to determine prices &amp; offers for sale? 
+						(e.g., see <a href="https://arxiv.org/abs/1108.4142">this paper</a> and references therein).</li>
 						<li>... determines who does what and at which price at a 
-						crowdsourcing market?</li>
+						crowdsourcing market? (e.g., see 						<a href="http://arxiv.org/abs/1308.1746">this survey</a>)</li>
 					</ul>
 					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading, simulations and research: contextual 
@@ -501,7 +527,8 @@
 					</li>
 				</ul>
                                                
-				<p><em><strong><a name="FinalReport.">Final report.</strong>&nbsp; </em>The final report should 
+				<p><em><strong><a name="FinalReport.">Final report.</strong>&nbsp; </em>
+				The final report should 
 				clearly and concisely describe the project: what was the chosen 
 				topic, why it is interesting, what you've set out to accomplish, 
 				what you've learned/understood/accomplished, and what it means 
