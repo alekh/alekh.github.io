@@ -250,8 +250,9 @@
 			<div id="view3">
             <div class="content">
                 
-                <p><strong>Sign-up sheet </strong>(coming soon)<strong>: </strong>Please use
-				this sign-up sheet to help us 
+                <p><strong>Sign-up sheet: </strong>Please use
+				<a href="https://docs.google.com/spreadsheets/d/11-64UpwUYk6chncVDE_hOgoIU09pZJnVxgmGMiDNcbY/edit?usp=sharing">this sign-up sheet</a> 
+				("projects" tab) to help us 
 				keep track of the projects. Please update it as appropriate, 
 				including your names/emails, brief project description (or the 
 				current/tentative version thereof), and project status. Also, 
@@ -259,8 +260,9 @@
 				other's topics and progress.</p>
 				<strong>Deliverables &amp; due dates</strong><ol>
 					<li><strong>Initial discussion</strong> regarding the possible project 
-					topics (via Skype, most likely).&nbsp; 
-					<p><em>When</em>: the <span class="auto-style3">week of Mon, Oct 23</span>. Sign-up sheet coming soon.</p>
+					topics (probably via email and/or Skype).&nbsp; 
+					<p><em>When</em>: the <span class="auto-style3">week of Mon, Oct 23</span> 
+					(more details coming up soon).</p>
 					<p>See below for advice 
 					on <a href="#ChoosingTopic">choosing a topic</a> and
 					<a href="#TopicSuggestions">topic suggestions</a>.</p></li>
@@ -410,8 +412,14 @@
 						epsilon-greedy, etc.)</li>
 						<li>Thompson Sampling (start with ch. 4 of Alex's book).</li>
 					</ul>
+					</li>
 					Take one such technique and read up on 
-					it.</li>
+					it.<li><span class="auto-style5"><em>[simulations: Thompson 
+					Sampling]</em></span> a famous bandit algorithm called 
+					"Thompson Sampling" relies on exactly sampling from Bayesian 
+					posteriors on mean rewards. Whereas in many practical 
+					applications one can only sample approximately. What is the 
+					effect of approximate sampling on algorithm's performance?</li>
 					<li><span class="auto-style5"><em>[bandits &amp; social learning]</em></span> As people make 
 					decisions over time (e.g., where to eat today?) they utilize 
 					information revealed by others in the past (think Yelp) and 
@@ -422,8 +430,8 @@
 					not have to follow them?  
 					<ul>
 						<li><span class="auto-style5"><em>[reading]</em></span>&nbsp; 
-						start with <a href="http://dl.acm.org/authorize?N47974">
-						this informal article</a> and this tutorial <span>(</span><a href="http://slivkins.com/work/ec17-tutorial-Alex.pdf">part 
+						start with <a href="http://dl.acm.org/authorize?N47974">this informal article</a> and this tutorial 
+						<span>(</span><a href="http://slivkins.com/work/ec17-tutorial-Alex.pdf">part 
 						I</a><span>&nbsp;and&nbsp;</span><a href="http://slivkins.com/work/ec17-tutorial-Bobby.pdf">part 
 						II</a><span>).</span></li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> see what happens under 
@@ -440,10 +448,8 @@
 					results) or <em>among</em> people (whom to give a loan?). 
 					Are some individuals or groups treated unfairly? What 
 					"fairness" means, and how to ensure it? (e.g., see
-					<a href="http://www.cis.upenn.edu/~aaroth/fairbandits.html">
-					this paper</a> and
-					<a href="http://www.cis.upenn.edu/~aaroth/incentfairness.html">
-					that paper</a>).<br>
+					<a href="http://www.cis.upenn.edu/~aaroth/fairbandits.html">this paper</a> and
+					<a href="http://www.cis.upenn.edu/~aaroth/incentfairness.html">that paper</a>).<br>
 					<span class="auto-style6"><em>(Current interests: Alekh, 
 					Alex, Steven.)</em></span></li>
 					<li><span class="auto-style5"><em>[online learning &amp; 
@@ -453,10 +459,8 @@
 					<ul>
 						<li><span class="auto-style5"><em>[reading]</em></span> 
 						Start with
-						<a href="http://www.cs.cornell.edu/courses/cs683/2007sp/lecnotes/week2.pdf">
-						this lecture note</a> and
-						<a href="http://rob.schapire.net/papers/FreundScYY.pdf">
-						that paper</a>.</li>
+						<a href="http://www.cs.cornell.edu/courses/cs683/2007sp/lecnotes/week2.pdf">this lecture note</a> and
+						<a href="http://rob.schapire.net/papers/FreundScYY.pdf">that paper</a>.</li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> 
 						what if the algorithm is best-responding to the 
 						"empirical play" (time-averages) of the adversary?
@@ -470,59 +474,95 @@
 					...</li>
 					<ul>
 						<li>... is used in an auction, either by the auction 
-						maker or by auction participants? (e.g., see 						<a href="http://cesa-bianchi.di.unimi.it/Pubblicazioni/secondPrice.pdf">
-						this paper</a> and
+						maker or by auction participants? (e.g., see 						
+						<a href="http://cesa-bianchi.di.unimi.it/Pubblicazioni/secondPrice.pdf">this paper</a> and
 						<a href="https://arxiv.org/abs/1611.01688">that paper</a>)</li>
 						<li>... is used to determine prices &amp; offers for sale? 
 						(e.g., see <a href="https://arxiv.org/abs/1108.4142">this paper</a> and references therein).</li>
 						<li>... determines who does what and at which price at a 
-						crowdsourcing market? (e.g., see 						<a href="http://arxiv.org/abs/1308.1746">this survey</a>)</li>
+						crowdsourcing market? (e.g., see 						
+						<a href="http://arxiv.org/abs/1308.1746">this survey</a>)</li>
 					</ul>
 					<span class="auto-style6"><em>(Current interests: Alex)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading, simulations and research: contextual 
 					bandits theory]</em></span> Possible topics include:<ul>
-						<li><span class="auto-style5"><em>[reading]</em></span> beyond IID: adversarial contexts and/or rewards (e.g.: <a href="https://arxiv.org/abs/1606.00313"> BISTRO+</a> and predecessors).</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> beyond IID: adversarial contexts and/or rewards (e.g.: 
+						<a href="https://arxiv.org/abs/1606.00313">BISTRO+</a> and predecessors).</li>
 						<li><span class="auto-style5"><em>[reading]</em></span> algorithms that adapt to data, achieving better 
-						performance for "nice" problem instances (e.g.: <a href="http://www.szit.bme.hu/~oti/publications/hannan.pdf"> first-order regret bounds</a>, <a href="http://proceedings.mlr.press/v65/agarwal17a.html"> open problem</a>, <a href="https://arxiv.org/abs/1612.06246">CORRAL</a>).</li>
+						performance for "nice" problem instances (e.g.: 
+						<a href="http://www.szit.bme.hu/~oti/publications/hannan.pdf">first-order regret bounds</a>, 
+						<a href="http://proceedings.mlr.press/v65/agarwal17a.html">open problem</a>, 
+						<a href="https://arxiv.org/abs/1612.06246">CORRAL</a>).</li>
 						<li><span class="auto-style5"><em>[simulations]</em></span> How do the adversarial algorithms behave on i.i.d. contexts and rewards, compared with algorithms for those settings? How do the i.i.d. algorithms work on non-i.i.d. and adversarial instances? Which seems more practically useful?</li>
-						<li><span class="auto-style5"><em>[research]</em></span> Study the <a href="http://cs.bme.hu/%7Egergo/files/NB15.pdf">implicit exploration technique</a> and try combining it with efficient contextual bandit methods as a replacement for uniform exploration? Does this lead to improvements in a structured action setting? You can also empirically evaluate the resulting approach in lieu of theory, or both.</li>
-						
+						<li><span class="auto-style5"><em>[research]</em></span> Study the 
+						<a href="http://cs.bme.hu/%7Egergo/files/NB15.pdf">implicit exploration technique</a> and try combining it with efficient contextual bandit methods as a replacement for uniform exploration? Does this lead to improvements in a structured action setting? You can also empirically evaluate the resulting approach in lieu of theory, or both.</li>
 					</ul>
 					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
 					<li><span class="auto-style5"><em>[reading and simulations: contextual 
 					bandits applications and deployments]</em></span> Possible topics include:<ul>
-					    <li><span class="auto-style5"><em>[reading]</em></span> Contextual bandits in the wild: deployed systems and learnings (e.g.: <a href="http://arxiv.org/abs/1606.03966">Decision Service paper</a>, <a href="https://research.google.com/pubs/pub43146.html"> Technical debt paper</a>, <a href="http://hunch.net/~rwil/">ICML Tutorial</a>)</li>
-					    <li><span class="auto-style5"><em>[reading/simulations]</em></span> Contextual bandit applications ( See for a partial ref of application papers: <a href="http://hunch.net/~rwil/Bibliography.pptx">ICML Tutorial</a>. Pick one or more papers around an application, and run simulations with some algorithms you have learned in this course on that application.</li>
-					  </ul>
-					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
-					<li><span class="auto-style5"><em>[reading and research: Off-policy evaluation]</em></span> How to best evaluate policies given logged data?<ul> 
-					    <li><span class="auto-style5"><em>[reading]</em></span> Biased estimators (e.g.: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/paper-14.pdf"> doubly robust with bias</a>, <a href="https://arxiv.org/abs/1612.01205">SWITCH</a>)</li>
-					    <li><span class="auto-style5"><em>[reading]</em></span> Applications in Information Retrieval (see e.g.: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ftir-online-evaluation-final-journal.pdf">Hofmann et al. monograph</a>)</li>
-					    <li><span class="auto-style5"><em>[research]</em></span> How to improve our evaluation approach for exploration algorithms using biased algorithms like SWITCH? Can you analyze in theory if the exploration algorithm has some nice properties? (a starting point for such a property might be the structural assumption in the <a href="https://arxiv.org/abs/1612.06246"> CORRAL </a> paper).</li>
-					    <li><span class="auto-style5"><em>[research]</em></span> How to extend the minimax lower bounds from the SWITCH paper for structural conditions on rewards such as linear?</li>
-					  </ul>
-					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
-					<li><span class="auto-style5"><em>[reading, simulations and research: Off-policy evaluation]</em></span> How to best learn good policies given logged data?<ul> 
-					    <li> <span class="auto-style5"><em>[reading]</em></span> Reducing the variance in off-policy learning (see e.g.<a href="https://www.microsoft.com/en-us/research/publication/self-normalized-estimator-counterfactual-learning/"> Self-normalized poem</a>)</li>
-					    <li> <span class="auto-style5"><em>[reading]</em></span> Can you extend the IPS-based off-policy learning ideas to further incorporate a variance term like the work above? You might get some inspiration from the <a href="http://proceedings.mlr.press/v15/beygelzimer11a.html">EXP4.P</a> paper. </li>
-					    <li> <span class="auto-style5"><em>[reading]</em></span> Study the effect of using different off-policy learning methods inside your favorite contextual bandit algorithm (such as to train the greedy policy in epsilon-greedy).</li>
-					  </ul>
-					  <span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+						<li><span class="auto-style5"><em>[reading]</em></span> Contextual bandits in the wild: deployed systems and learnings (e.g.: 
+						<a href="http://arxiv.org/abs/1606.03966">Decision Service paper</a>, 
+						<a href="https://research.google.com/pubs/pub43146.html">Technical debt paper</a>, 
+						<a href="http://hunch.net/~rwil/">ICML Tutorial</a>)</li>
+						<li><span class="auto-style5"><em>[reading/simulations]</em></span> Contextual bandit applications ( See for a partial ref of application papers: 
+						<a href="http://hunch.net/~rwil/Bibliography.pptx">ICML Tutorial</a>. Pick one or more papers around an application, and run simulations with some algorithms you have learned in this course on that application.</li>
+					</ul>
+					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+					<li><span class="auto-style5"><em>[reading and research: Off-policy evaluation]</em></span> How to best evaluate policies given logged data?<ul>
+						<li><span class="auto-style5"><em>[reading]</em></span> Biased estimators (e.g.: 
+						<a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/paper-14.pdf">doubly robust with bias</a>, 
+						<a href="https://arxiv.org/abs/1612.01205">SWITCH</a>)</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> Applications in Information Retrieval (see e.g.: 
+						<a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ftir-online-evaluation-final-journal.pdf">Hofmann et al. monograph</a>)</li>
+						<li><span class="auto-style5"><em>[research]</em></span> How to improve our evaluation approach for exploration algorithms using biased algorithms like SWITCH? Can you analyze in theory if the exploration algorithm has some nice properties? (a starting point for such a property might be the structural assumption in the 
+						<a href="https://arxiv.org/abs/1612.06246">CORRAL </a>paper).</li>
+						<li><span class="auto-style5"><em>[research]</em></span> How to extend the minimax lower bounds from the SWITCH paper for structural conditions on rewards such as linear?</li>
+					</ul>
+					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
+					<li><span class="auto-style5"><em>[reading, simulations and research: Off-policy evaluation]</em></span> How to best learn good policies given logged data?<ul>
+						<li><span class="auto-style5"><em>[reading]</em></span> Reducing the variance in off-policy learning (see e.g.<a href="https://www.microsoft.com/en-us/research/publication/self-normalized-estimator-counterfactual-learning/"> Self-normalized poem</a>)</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> Can you extend the IPS-based off-policy learning ideas to further incorporate a variance term like the work above? You might get some inspiration from the 
+						<a href="http://proceedings.mlr.press/v15/beygelzimer11a.html">EXP4.P</a> paper. 
+						</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> Study the effect of using different off-policy learning methods inside your favorite contextual bandit algorithm (such as to train the greedy policy in epsilon-greedy).</li>
+					</ul>
+					<span class="auto-style6"><em>(Current interests: Alekh)</em></span>&nbsp;
 					  <li><span class="auto-style5"><em>[reading, simulations and research: Exploration in RL]</em></span> Read on and experiment with different exploration algorithms for reinforcement learning<ul>
-					      <li> <span class="auto-style5"><em>[reading]</em></span> Exploration in small-state MDPs (e.g.: <a href="http://web.eecs.umich.edu/~baveja/Papers/MLjournal6.pdf">E<sup>3</sup></a>, <a href="http://www.jmlr.org/papers/v3/brafman02a.html">R-MAX</A>, <a href="http://www.jmlr.org/papers/v11/jaksch10a.html">UCRL</a>, <a href="http://www.hunch.net/~jl/projects/RL/Delayed_Q/icml06.pdf">Delayed-Q learning</a>)</li>
-					      <li> <span class="auto-style5"><em>[reading]</em></span> Exploration with complex observations (e.g.: <a href="https://papers.nips.cc/paper/5245-model-based-reinforcement-learning-and-the-eluder-dimension.pdf">Eluder dimension</a>, <a href="https://arxiv.org/abs/1610.09512">Bellman Rank</a>, <a href="http://pathak22.github.io/noreward-rl/resources/icml17.pdf">Curiosity driven exploration</a>) </li>
-					      <li><span class="auto-style5"><em>[simulations]</em></span> Take some standard RL benchmark problems where exploration matters. Compare an algorithm like R-MAX or UCRL with a (contextual) bandit algorithm. Can you try the same for an Atari game?</li>
-					      <li><span class="auto-style5"><em>[research]</em></span> Come up with a theoretical model to analyze an algorithm like the curiosity-driven exploration paper. Hint: try to capture the idea that only some aspects of an observation might matter to the optimal policy/value function given a task.</li>
-					    </ul>
+						  <li><span class="auto-style5"><em>[reading]</em></span> Exploration in small-state MDPs (e.g.: 
+						  <a href="http://web.eecs.umich.edu/~baveja/Papers/MLjournal6.pdf">E<sup>3</sup></a>, 
+						  <a href="http://www.jmlr.org/papers/v3/brafman02a.html">R-MAX</A>, 
+						  <a href="http://www.jmlr.org/papers/v11/jaksch10a.html">UCRL</a>, 
+						  <a href="http://www.hunch.net/~jl/projects/RL/Delayed_Q/icml06.pdf">Delayed-Q learning</a>)</li>
+						  <li><span class="auto-style5"><em>[reading]</em></span> Exploration with complex observations (e.g.: 
+						  <a href="https://papers.nips.cc/paper/5245-model-based-reinforcement-learning-and-the-eluder-dimension.pdf">Eluder dimension</a>, 
+						  <a href="https://arxiv.org/abs/1610.09512">Bellman Rank</a>, 
+						  <a href="http://pathak22.github.io/noreward-rl/resources/icml17.pdf">Curiosity driven exploration</a>) 
+						  </li>
+						  <li><span class="auto-style5"><em>[simulations]</em></span> Take some standard RL benchmark problems where exploration matters. Compare an algorithm like R-MAX or UCRL with a (contextual) bandit algorithm. Can you try the same for an Atari game?</li>
+						  <li><span class="auto-style5"><em>[research]</em></span> Come up with a theoretical model to analyze an algorithm like the curiosity-driven exploration paper. Hint: try to capture the idea that only some aspects of an observation might matter to the optimal policy/value function given a task.</li>
+					  </ul>
+					  <span class="auto-style6"><em>(Current interests: Alekh, Nan)</em></span>&nbsp;
+					    <li><span class="auto-style5"><em>[reading: Predictive State Representations]</em></span> What constitutes a state in RL? Is there a procedural way to define states in RL? PSRs provide one such notion (e.g.: 
+						<a href="http://web.eecs.umich.edu/~baveja/Papers/psr.pdf">Original PSR paper</a>, 
+						<a href="http://www.cs.cmu.edu/~ggordon/boots-etal-PSR-AAMAS.pdf">Spectral learning for PSRs</a>)</li>
 					    <span class="auto-style6"><em>(Current interests: Alekh, Nan)</em></span>&nbsp;
-					    <li><span class="auto-style5"><em>[reading: Predictive State Representations]</em></span> What constitutes a state in RL? Is there a procedural way to define states in RL? PSRs provide one such notion (e.g.: <a href="http://web.eecs.umich.edu/~baveja/Papers/psr.pdf">Original PSR paper</a>, <a href="https://www.cc.gatech.edu/~bboots3/files/RSSclosingtheloop.pdf"> Spectral learning for PSRs</a>)</li>
+					    <li><span class="auto-style5"><em>[reading: Hierarchical Reinforcement Learning]</em></span> If the planning horizon is long, and the task you are trying to accomplish has re-usable subtasks, can you effectively leverage this structure? (see e.g. 
+						<a href="http://web.eecs.umich.edu/~baveja/Papers/aij.pdf">Options paper</a>, 
+						<a href="http://www.ifaamas.org/Proceedings/aamas2011/papers/A6_R70.pdf">General value functions</a> and 
+						<a href="https://arxiv.org/abs/1706.04208">application to Atari</a>)</li>
 					    <span class="auto-style6"><em>(Current interests: Alekh, Nan)</em></span>&nbsp;
-					    <li><span class="auto-style5"><em>[reading: Hierarchical Reinforcement Learning]</em></span> If the planning horizon is long, and the task you are trying to accomplish has re-usable subtasks, can you effectively leverage this structure? (see e.g. <a href="http://web.eecs.umich.edu/~baveja/Papers/aij.pdf">Options paper</a>, <a href="http://www.ifaamas.org/Proceedings/aamas2011/papers/A6_R70.pdf">General value functions</a> and <a href="https://arxiv.org/abs/1706.04208">application to Atari</a>)</li>
-					    <span class="auto-style6"><em>(Current interests: Alekh, Nan)</em></span>&nbsp;
-					    <li><span class="auto-style5"><em>[reading/simulations: Proper evaluation of RL algorithms]</em></span> The training-validation-test paradigm in supervised learning is robust to many types of experimental errors. We have repositories of standardized dataset splits, which makes it easier to compare experiments across papers. RL agents generate their own data, and are often run in simulators which makes it harder to do experiments which can be compared. How to make sure that our results are genuinely interesting? Do you want to reproduce the results of your favorite empirical RL paper according to a recommended methodology? (see e.g.: <a href="https://arxiv.org/abs/1709.06560">Deep RL that matters</a>, <a href="https://arxiv.org/abs/1709.06009">Atari evaluation paper</a>)</li>
-                                            <li><span class="auto-style5"><em>[reading: Policy improvement and gradient]</em></span></li> Given a starting policy supplied by an expert at training time, how does an RL agent learn a policy as good as it or better? Can the agent bootstrap from an expert and continue to get even better over time?<ul>
-					      <li><span class="auto-style5"><em>[reading]</em></span> Policy improvement approaches (see e.g.: <a href="http://ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdfhttp://ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf">DAGGER</a>, <a href="http://icml.cc/2015/tutorials/AdvancesStructuredPrediction.pdf">ICML tutorial</a>, <a href="http://ri.cmu.edu/wp-content/uploads/2017/04/DifferentiableAggrevate-11.pdf">Deeply Aggrevated</a>) </li>
-					      <li> <span class="auto-style5"><em>[reading]</em></span> Policy search and gradient approaches (quite related to the one above, you might want to pick a few from both) (see e.g.: <a href="http://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf">Policy gradient paper</a>, <a href="http://www.jmlr.org/proceedings/papers/v37/schulman15.pdf">TRPO</a>)</a>
+					    <li><span class="auto-style5"><em>[reading/simulations: Proper evaluation of RL algorithms]</em></span> The training-validation-test paradigm in supervised learning is robust to many types of experimental errors. We have repositories of standardized dataset splits, which makes it easier to compare experiments across papers. RL agents generate their own data, and are often run in simulators which makes it harder to do experiments which can be compared. How to make sure that our results are genuinely interesting? Do you want to reproduce the results of your favorite empirical RL paper according to a recommended methodology? (see e.g.: 
+						<a href="https://arxiv.org/abs/1709.06560">Deep RL that matters</a>, 
+						<a href="https://arxiv.org/abs/1709.06009">Atari evaluation paper</a>)</li>
+					<li><span class="auto-style5"><em>[reading: Policy improvement and gradient]</em></span></li> Given a starting policy supplied by an expert at training time, how does an RL agent learn a policy as good as it or better? Can the agent bootstrap from an expert and continue to get even better over time?<ul>
+						<li><span class="auto-style5"><em>[reading]</em></span> Policy improvement approaches (see e.g.: 
+						<a href="http://ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdfhttp://ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf">DAGGER</a>, 
+						<a href="http://icml.cc/2015/tutorials/AdvancesStructuredPrediction.pdf">ICML tutorial</a>, 
+						<a href="http://ri.cmu.edu/wp-content/uploads/2017/04/DifferentiableAggrevate-11.pdf">Deeply Aggrevated</a>) 
+						</li>
+						<li><span class="auto-style5"><em>[reading]</em></span> Policy search and gradient approaches (quite related to the one above, you might want to pick a few from both) (see e.g.: 
+						<a href="http://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf">Policy gradient paper</a>, 
+						<a href="http://www.jmlr.org/proceedings/papers/v37/schulman15.pdf">TRPO</a>)</a>
                                            </ul>
 					</li>
 				</ul>
